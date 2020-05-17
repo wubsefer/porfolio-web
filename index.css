@@ -5,6 +5,11 @@
 #navbar{
 	padding:15px;
 	background: green;
+	position: fixed;
+	width: 100%; 
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 #navbar ul{
@@ -12,6 +17,7 @@
 	display: flex;
 	list-style-type: none;
 	justify-content: flex-end;
+	padding-right: 20px;
 }
 #navbar a{
 	color: white;
@@ -72,4 +78,14 @@ a {
 #about a {
 	color: green;
 	margin: 10px;
+}
+
+@media only screen and(max-width: 500px){
+	#about a {
+		color: red;
+		margin: 10px;
+	}
+	#contact{
+		padding: 50px 20px;
+	}
 }
